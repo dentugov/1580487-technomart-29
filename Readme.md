@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Денис Тугов](https://up.htmlacademy.ru/htmlcss/29/user/1580487).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
