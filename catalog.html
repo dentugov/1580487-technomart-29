@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +40,7 @@
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="404.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="404.html">Новости</a></li>
           <li><a href="404.html">Спецпредложения</a></li>
           <li><a href="404.html">Доставка</a></li>
@@ -66,16 +69,15 @@
       </section>
 
       <section>
-        <!-- Здесь фразу "Сортировка" оставить в "р" или может сделать тоже h2? -->
-        <p>Сортировка:</p>
+        <h2>Сортировка:</h2>
         <div>
-          <a href="catalog.html?sort=price">По цене</a>
-          <a href="catalog.html?sort=type">По типу</a>
-          <a href="catalog.html?sort=function">По функционалу</a>
+          <a href="catalog?sort=price">По цене</a>
+          <a href="catalog?sort=type">По типу</a>
+          <a href="catalog?sort=function">По функционалу</a>
         </div>
         <div>
-          <a href="catalog.html?order=ASC"><span>По возрастанию</span></a>
-          <a href="catalog.html?order=DESC"><span>По убыванию</span></a>
+          <a href="catalog?order=ASC"><span>По возрастанию</span></a>
+          <a href="catalog?order=DESC"><span>По убыванию</span></a>
         </div>
       </section>
 
@@ -198,10 +200,10 @@
       
       <!-- Обернул все в секции. Возник вопрос что делать тогда с пагинацией? Впихнуть ее в секцию с каталогом или оставить отдельным дивом? Или тоже в отдельную секцию ее?) -->
       <div>
-        <a href="catalog.html?page=1">1</a>
-        <a href="catalog.html?page=2">2</a>
-        <a href="catalog.html?page=3">3</a>
-        <a href="catalog.html?page=2">Следующая</a>
+        <a href="catalog?page=1">1</a>
+        <a href="catalog?page=2">2</a>
+        <a href="catalog?page=3">3</a>
+        <a href="catalog?page=2">Следующая</a>
       </div>
     </section>
 
@@ -230,7 +232,7 @@
         <ul>
           <li><a href="404.html">Компания</a></li>
           <li><a href="404.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="404.html">Доставка</a></li>
           <li><a href="404.html">Контакты</a></li>
         </ul>
