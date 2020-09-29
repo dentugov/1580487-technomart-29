@@ -1,106 +1,121 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="site" lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  <body>
+<body class="site-body">
 
-    <header>
+  <header class="site-header">
 
-      <div>
-
-        <a href="index.html"><img src="https://via.placeholder.com/138x23" alt="Логотип Техномарт" width="138" height="23"></a>
+    <div class="header-topbar">
+      <div class="wrapper">
+        <a class="site-logo" href="index.html"><img src="https://via.placeholder.com/108x18" alt="Логотип Техномарт" width="108" height="18"></a>
         <!-- Здесь будет форма поиска -->
-
-        <ul>
-          <li><a href="404.html">Закладки: <span>0</span></a></li>
-          <li><a href="404.html">Корзина: <span>0</span></a></li>
-        </ul>
-        <a href="404.html">Оформить заказ</a>
-
+          <ul class="shop-menu-list">
+            <li class="shop-menu-item"><a class="shop-menu-link favorites" href="404.html">Закладки: <span class="shop-menu-value">0</span></a></li>
+            <li class="shop-menu-item"><a class="shop-menu-link cart" href="404.html">Корзина: <span class="shop-menu-value">0</span></a></li>
+          </ul>
+          <a class="header-make-order" href="404.html">Оформить заказ</a>
       </div>
+    </div>
 
-      <div>
+    <div class="header-main-content">
+      <div class="wrapper">
 
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <h1 class="header-site-descript">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
 
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-        <ul>
-          <li><a href="404.html">Войти</a></li>
-          <li><a href="404.html">Регистрация</a></li>
+        <ul class="user-menu">
+          <li class="user-menu-item login"><a class="user-menu-link" href="404.html"><!-- svg inline here --><span class="login-label">Войти</span></a></li>
+          <li class="user-menu-item"><a class="user-menu-link" href="404.html">Регистрация</a></li>
         </ul>
 
-        <nav>
-          <ul>
-            <li><a>Главная</a></li>
-            <li><a href="404.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="404.html">Новости</a></li>
-            <li><a href="404.html">Спецпредложения</a></li>
-            <li><a href="404.html">Доставка</a></li>
-            <li><a href="404.html">Контакты</a></li>
+        <nav class="site-navigation">
+          <ul class="main-menu">
+            <li class="main-menu-item"><a class="main-menu-link" href="index.html">Главная</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="404.html">Компания</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="catalog.html">Каталог</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="404.html">Новости</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="404.html">Спецпредложения</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="404.html">Доставка</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="404.html">Контакты</a></li>
           </ul>
         </nav>
 
       </div>
+    </div>
 
-    </header>
+  </header>
 
-    <main>
+  <main class="page-content-wrap">
+    <div class="wrapper">
 
       <img src="https://via.placeholder.com/300x200" alt="404" width="300" height="200">
       <h2>Упс, не найдено =(</h2>
       <p>Страница удалена или еще не создана.</p>
       <a href="index.html">Перейти на главную</a>
+    
+    </div>
+  </main>
 
-    </main>
+  <footer class="site-footer">
 
-    <footer>
+    <div class="footer-upper">
+      <div class="wrapper">
 
-      <div>
         <div>
-          <a href="index.html"><img src="https://via.placeholder.com/220x68" alt="Логотип «Техномарт» красный" width="220" height="68"></a>
+          <a class="footer-logo" href="index.html"><img src="https://via.placeholder.com/220x68" alt="Логотип «Техномарт» красный" width="220" height="68"></a>
           <address>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br><a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           </address>
         </div>
+
         <div>
-          <ul>
-            <li><a href="404.html">Компания</a></li>
-            <li><a href="404.html">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="404.html">Доставка</a></li>
-            <li><a href="404.html">Контакты</a></li>
+          <ul class="footer-site-nav">
+            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Компания</a></li>
+            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Новости</a></li>
+            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="catalog.html">Каталог</a></li>
+            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Доставка</a></li>
+            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Контакты</a></li>
           </ul>
-          <ul>
-            <li><a href="404.html">Материалы</a></li>
-            <li><a href="404.html">Техника</a></li>
-            <li><a href="404.html">Инструмент</a></li>
-            <li><a href="404.html">Спецпредложения</a></li>
+
+          <ul class="footer-product-nav">
+            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Материалы</a></li>
+            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Техника</a></li>
+            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Инструмент</a></li>
+            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Спецпредложения</a></li>
           </ul>
         </div>
-      </div>
 
-      <div>
-        <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-        <ul>
-          <li><a href="https://vk.com/denistugov" target="_blank">Вконтакте</a></li>
-          <li><a href="https://www.facebook.com/denis.tugov" target="_blank">Фейсбук</a></li>
-          <li><a href="https://www.instagram.com/den0015" target="_blank">Инстаграм</a></li>
+      </div>
+    </div>
+
+    <div class="footer-trim">
+      <div class="wrapper">
+
+        <p class="copyright">© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
+
+        <ul class="footer-socials">
+          <li class="footer-socials-item"><a href="https://vk.com/denistugov" target="_blank"><!-- svg inline here --><span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="footer-socials-item"><a href="https://www.facebook.com/denis.tugov" target="_blank"><!-- svg inline here --><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="footer-socials-item"><a href="https://www.instagram.com/den0015" target="_blank"><!-- svg inline here --><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
-        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
+
+        <p class="reply">Обратная связь: <br><a class="footer-trim-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="designed">Разработано — <br><a class="footer-trim-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
+        
       </div>
+    </div>
 
-    </footer>
+  </footer>
 
-  </body>
+</body>
 </html>
