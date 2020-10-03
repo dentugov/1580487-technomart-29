@@ -45,6 +45,7 @@
   --input-hover-disable: #b5b5b5;
 
   --footer-text:  #f1f5f7;
+  --social-button-bg: #212a3a;
   --icon-hover: #3d546f;
 }
 
@@ -188,6 +189,10 @@ img {
   padding: 0;
 }
 
+.shop-menu-item.filled {
+  background-color: var(--basic-red);
+}
+
 .shop-menu-item:active {
   background-color: var(--extradark-greyblue);
 }
@@ -272,6 +277,18 @@ img {
 
 .user-logged-name:active {
   color: var(--basic-greylight);
+}
+
+.user-logout-icon {
+  fill: var(--basic-greylight);
+}
+
+.user-logout-icon:hover {
+  fill: var(--icon-hover);
+}
+
+.user-logout-icon:active {
+  fill: var(--basic-greylight);
 }
 
 .user-logged-menu {
@@ -407,7 +424,15 @@ img {
   padding: 0;
 }
 
-.footer-trim-link{
+.social-button-bg {
+  fill: var(--social-button-bg);
+}
+
+.footer-socials-item:hover .social-button-bg {
+  fill: var(--basic-red);
+}
+
+.footer-trim-link {
   color: var(--extra-yellowlight);
 }
 
