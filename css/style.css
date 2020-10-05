@@ -155,11 +155,9 @@ img {
 
 .site-logo {
   display: block;
-  line-height: 1;
   width: 220px;
   background-color: var(--basic-red);
-  padding: 12px 0;
-  text-align: center;
+  padding: 12px 56px;
   position: relative;
 }
 
@@ -175,7 +173,7 @@ img {
 }
 
 .site-logo img {
-  vertical-align: top;
+  display: block;
 }
 
 .site-logo:active,
@@ -280,15 +278,15 @@ img {
 }
 
 .user-logout-icon {
-  fill: var(--basic-greylight);
+  color: var(--basic-greylight);
 }
 
 .user-logout-icon:hover {
-  fill: var(--icon-hover);
+  color: var(--icon-hover);
 }
 
 .user-logout-icon:active {
-  fill: var(--basic-greylight);
+  color: var(--basic-greylight);
 }
 
 .user-logged-menu {
@@ -351,6 +349,18 @@ img {
   font-size: 18px;
   color: var(--footer-text);
   background-color: var(--basic-greyblue);
+}
+
+.footer-logo {
+  display: block;
+  width: 220px;
+  background-color: var(--basic-red);
+  padding: 20px 41px;
+  border-bottom: 5px solid var(--basic-red-active);
+}
+
+.footer-logo img {
+  display: block;
 }
 
 .footer-address {
@@ -425,11 +435,11 @@ img {
 }
 
 .social-button-bg {
-  fill: var(--social-button-bg);
+  color: var(--social-button-bg);
 }
 
 .footer-socials-item:hover .social-button-bg {
-  fill: var(--basic-red);
+  color: var(--basic-red);
 }
 
 .footer-trim-link {
