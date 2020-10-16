@@ -15,28 +15,43 @@
 
     <div class="header-topbar">
       <div class="wrapper">
-        <a class="site-logo"><img src="img/logo/site-logo.svg" alt="Логотип Техномарт" width="108" height="18"></a>
-        <!-- Здесь будет форма поиска -->
-          <ul class="shop-menu-list">
-            <li class="shop-menu-item"><a class="shop-menu-link favorites" href="404.html">Закладки: <span class="shop-menu-value">0</span></a></li>
-            <li class="shop-menu-item"><a class="shop-menu-link cart" href="404.html">Корзина: <span class="shop-menu-value">0</span></a></li>
-          </ul>
-          <a class="header-make-order" href="404.html">Оформить заказ</a>
+        <div class="topbar-grid-container">
+
+          <a class="site-logo"><img src="img/logo/site-logo.svg" alt="Логотип Техномарт" width="108" height="18"></a>
+
+          <form class="header-search-form" action="#" method="POST">
+            <button class="search-form-button" type="submit"><span class="visually-hidden">Найти</span></button>
+            <input type="search" placeholder="Поиск:">
+          </form>
+
+          <div class="shop-navigation-wrap">
+            <ul class="shop-menu-list">
+              <li class="shop-menu-item"><a class="shop-menu-link favorites" href="404.html">Закладки: <span class="shop-menu-value">0</span></a></li>
+              <li class="shop-menu-item"><a class="shop-menu-link cart" href="404.html">Корзина: <span class="shop-menu-value">0</span></a></li>
+            </ul>
+            <a class="header-make-order" href="404.html">Оформить заказ</a>
+          </div>
+
+        </div>
       </div>
     </div>
 
     <div class="header-main-content">
       <div class="wrapper">
 
-        <h1 class="header-site-descript">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+        <div class="header-main-grid-container">
+          <h1 class="header-site-descript">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
 
-        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <div class="header-contact-block">
+            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
 
-        <ul class="user-menu">
-          <li class="user-menu-item login"><a class="user-menu-link" href="404.html"><!-- svg inline here --><span class="login-label">Войти</span></a></li>
-          <li class="user-menu-item"><a class="user-menu-link" href="404.html">Регистрация</a></li>
-        </ul>
+          <ul class="user-menu">
+            <li class="user-menu-item login"><a class="user-menu-link" href="404.html"><!-- svg inline here --><span class="login-label">Войти</span></a></li>
+            <li class="user-menu-item"><a class="user-menu-link" href="404.html">Регистрация</a></li>
+          </ul>
+        </div>
 
         <nav class="site-navigation">
           <ul class="main-menu">
@@ -95,20 +110,26 @@
 
               <div class="promo-slider-item active">
                 <img src="img/content/slide-rockdrill.jpg" alt="Перфораторы Bosch" width="620" height="266">
-                <div class="promo-slider-text-wrap">
-                  <h3 class="promo-slider-title">Перфораторы</h3>
-                  <p class="promo-slider-tagline">Настоящие мужские игрушки</p>
+
+                <div class="promo-slider-content-container">
+                  <div class="promo-slider-text-wrap">
+                    <h3 class="promo-slider-title">Перфораторы</h3>
+                    <p class="promo-slider-tagline">Настоящие мужские игрушки</p>
+                  </div>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
                 </div>
-                <a class="button" href="catalog.html">Открыть каталог</a>
               </div>
 
-              <div class="promo-slider-item">
+              <div class="promo-slider-item" style="display: none;">
                 <img src="img/content/slide-drill.jpg" alt="Дрели Bosch" width="620" height="266">
-                <div class="promo-slider-text-wrap">
-                  <h3 class="promo-slider-title">Дрели</h3>
-                  <p class="promo-slider-tagline">Соседям на радость</p>
+
+                <div class="promo-slider-content-container">
+                  <div class="promo-slider-text-wrap">
+                    <h3 class="promo-slider-title">Дрели</h3>
+                    <p class="promo-slider-tagline">Соседям на радость</p>
+                  </div>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
                 </div>
-                <a class="button" href="catalog.html">Открыть каталог</a>
               </div>
 
             </div>
@@ -230,13 +251,13 @@
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж!</p>
             </div>
-            <div id="Warranty" class="tab-item">
+            <div id="Warranty" class="tab-item" style="display: none;">
               <h3 class="tab-item-title">Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
                 возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом
                 уж восстановите как-нибудь сами.</p>
             </div>
-            <div id="Сredit" class="tab-item">
+            <div id="Сredit" class="tab-item" style="display: none;">
               <h3 class="tab-item-title">Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             </div>
@@ -252,25 +273,29 @@
 
         <h2 class="visually-hidden">О компании</h2>
 
-        <div>
-          <h3 class="page-section-title">Компания «Техномарт»</h3>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-            равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
-            компаниями:</p>
-          <ul class="stylized-list">
-            <li class="stylized-list-item">Деловые линии</li>
-            <li class="stylized-list-item">Автотрейдинг</li>
-            <li class="stylized-list-item">ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="button about" href="404.html">Подробнее о компании</a>
-        </div>
+        <div class="index-about-grid-container">
 
-        <div>
-          <h3 class="page-section-title">Контакты</h3>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="404.html"><img src="img/content/map.jpg" alt="" width="300" height="158"></a>
-          <a class="button contact-us" href="404.html">Заблудились? Напишите нам!</a>
+          <div class="index-about-grid-item">
+            <h3 class="page-section-title">Компания «Техномарт»</h3>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+              равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
+              компаниями:</p>
+            <ul class="stylized-list">
+              <li class="stylized-list-item">Деловые линии</li>
+              <li class="stylized-list-item">Автотрейдинг</li>
+              <li class="stylized-list-item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="button about" href="404.html">Подробнее о компании</a>
+          </div>
+
+          <div class="index-about-grid-item">
+            <h3 class="page-section-title">Контакты</h3>
+            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+            <a href="404.html"><img src="img/content/map.jpg" alt="" width="300" height="158"></a>
+            <a class="button contact-us" href="404.html">Заблудились? Напишите нам!</a>
+          </div>
+
         </div>
 
       </div>
@@ -282,48 +307,54 @@
 
     <div class="footer-upper">
       <div class="wrapper">
+        <div class="footer-upper-grid-container">
 
-        <div>
-          <a class="footer-logo"><img src="img/logo/site-logo.svg" alt="Логотип «Техномарт» красный" width="138" height="23"></a>
-          <address>
-            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br><a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-          </address>
+          <div class="footer-upper-grid-item">
+            <a class="footer-logo"><img src="img/logo/site-logo.svg" alt="Логотип «Техномарт» красный" width="138" height="23"></a>
+            <address>
+              <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br><a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+            </address>
+          </div>
+
+          <div class="footer-upper-grid-item">
+            <ul class="footer-site-nav">
+              <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Компания</a></li>
+              <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Новости</a></li>
+              <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="catalog.html">Каталог</a></li>
+              <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Доставка</a></li>
+              <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Контакты</a></li>
+            </ul>
+
+            <ul class="footer-product-nav">
+              <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Материалы</a></li>
+              <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Техника</a></li>
+              <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Инструмент</a></li>
+              <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Спецпредложения</a></li>
+            </ul>
+          </div>
+
         </div>
-
-        <div>
-          <ul class="footer-site-nav">
-            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Компания</a></li>
-            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Новости</a></li>
-            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="catalog.html">Каталог</a></li>
-            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Доставка</a></li>
-            <li class="footer-site-nav-item"><a class="footer-site-nav-link" href="404.html">Контакты</a></li>
-          </ul>
-
-          <ul class="footer-product-nav">
-            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Материалы</a></li>
-            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Техника</a></li>
-            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Инструмент</a></li>
-            <li class="footer-product-nav-item"><a class="footer-product-nav-link" href="404.html">Спецпредложения</a></li>
-          </ul>
-        </div>
-
       </div>
     </div>
 
     <div class="footer-trim">
       <div class="wrapper">
+        <div class="footer-trim-grid-container">
 
-        <p class="copyright">© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
+          <p class="copyright">© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
 
-        <ul class="footer-socials">
-          <li class="footer-socials-item"><a href="https://vk.com/denistugov" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z" fill="#fff"/></svg><span class="visually-hidden">Вконтакте</span></a></li>
-          <li class="footer-socials-item"><a href="https://www.facebook.com/denis.tugov" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4z" fill="#fff"/></svg><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="footer-socials-item"><a href="https://www.instagram.com/den0015" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15a3 3 0 013 3v15a3 3 0 01-3 3H14a3 3 0 01-3-3V14a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM14 29v-9h1.18a6.5 6.5 0 1012.64 0H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"/></svg><span class="visually-hidden">Инстаграм</span></a></li>
-        </ul>
+          <ul class="footer-socials">
+            <li class="footer-socials-item"><a href="https://vk.com/denistugov" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z" fill="#fff"/></svg><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="footer-socials-item"><a href="https://www.facebook.com/denis.tugov" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4z" fill="#fff"/></svg><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="footer-socials-item"><a href="https://www.instagram.com/den0015" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15a3 3 0 013 3v15a3 3 0 01-3 3H14a3 3 0 01-3-3V14a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM14 29v-9h1.18a6.5 6.5 0 1012.64 0H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"/></svg><span class="visually-hidden">Инстаграм</span></a></li>
+          </ul>
 
-        <p class="reply">Обратная связь: <br><a class="footer-trim-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p class="designed">Разработано — <br><a class="footer-trim-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
-        
+          <div class="footer-signature">
+            <p class="reply">Обратная связь: <br><a class="footer-trim-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p class="designed">Разработано — <br><a class="footer-trim-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
+          </div>
+
+        </div>        
       </div>
     </div>
 
