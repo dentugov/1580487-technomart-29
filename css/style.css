@@ -165,7 +165,7 @@ img {
 
 .topbar-grid-container {
   display: grid;
-  grid-template-columns: 220px 1fr 460px;
+  grid-template-columns: 220px 260px 1fr;
 }
 
 .site-logo {
@@ -196,8 +196,7 @@ img {
 }
 
 .shop-navigation-wrap {
-  display: grid;
-  grid-template-columns: 1fr max-content;
+  display: flex; /* допилю в следующем задании */
 }
 
 .shop-menu-list {
@@ -531,7 +530,7 @@ img {
 .promo-menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 123px 123px 123px;
+  grid-template-rows: auto auto auto;
   gap: 20px;
 }
 
@@ -626,13 +625,31 @@ img {
 }
 
 .promo-slider-nav {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+.slider-button-prev {    
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-button-next {    
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .promo-slider-pagination {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
 /* Index Catalog Section */
@@ -816,7 +833,31 @@ img {
   gap: 20px;
 }
 
+/* Catalog Page */
+
+.catalog-main-title {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-greyblue);
+  background-color: var(--bg-greycool);
+}
+
+.catalog-content-container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;
+}
+
 /* Catalog Filters */
+
+.catalog-filters {
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
 
 .catalog-filters-title {
   font-size: 13px;
@@ -859,14 +900,10 @@ img {
 
 /* Catalog Content */
 
-.catalog-main-title {
-  font-family: var(--secondary-font);
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--basic-greyblue);
-  background-color: var(--bg-greycool);
+.catalog-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px 20px;
 }
 
 /* Catalog Pagination */
