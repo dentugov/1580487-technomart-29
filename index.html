@@ -21,7 +21,12 @@
 
           <form class="header-search-form" action="#" method="POST">
             <input class="header-search-field" type="search" placeholder="Поиск:">
-            <button class="search-form-button" type="submit"><span class="visually-hidden">Найти</span></button>
+            <button class="search-form-button" type="submit">
+              <span class="visually-hidden">Найти</span>
+              <svg class="search-form-icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
+              </svg>
+            </button>
           </form>
 
           <div class="shop-navigation-wrap">
@@ -48,7 +53,15 @@
           </div>
 
           <ul class="user-menu">
-            <li class="user-menu-item login"><a class="user-menu-link" href="404.html"><!-- svg inline here --><span class="login-label">Войти</span></a></li>
+            <li class="user-menu-item login">
+              <a class="user-menu-link login-link" href="404.html">
+                <svg class="login-icon" width="21" height="17" viewBox="0 0 21 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z"/>
+                  <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z"/>
+                </svg>
+                <span class="login-label">Войти</span>
+              </a>
+            </li>
             <li class="user-menu-item"><a class="user-menu-link" href="404.html">Регистрация</a></li>
           </ul>
         </div>
@@ -79,27 +92,27 @@
 
         <div class="promo-menu">
 
-          <div class="promo-menu-item yellow">
+          <div class="promo-menu-item materials new">
             <h3 class="promo-menu-item-title">Материалы</h3>
             <a class="promo-menu-item-link" href="404.html">На любой вкус</a>
           </div>
 
-          <div class="promo-menu-item blue">
+          <div class="promo-menu-item tools">
             <h3 class="promo-menu-item-title">Инструмент</h3>
             <a class="promo-menu-item-link" href="404.html">На все случаи</a>
           </div>
 
-          <div class="promo-menu-item lilac">
+          <div class="promo-menu-item technics">
             <h3 class="promo-menu-item-title">Техника</h3>
             <a class="promo-menu-item-link" href="404.html">Для стройки</a>
           </div>
 
-          <div class="promo-menu-item green">
+          <div class="promo-menu-item sale">
             <h3 class="promo-menu-item-title">Скидки 50%</h3>
             <a class="promo-menu-item-link" href="404.html">На 350 товаров</a>
           </div>
 
-          <div class="promo-menu-item yellow">
+          <div class="promo-menu-item delivery">
             <h3 class="promo-menu-item-title">Доставка</h3>
             <a class="promo-menu-item-link" href="404.html">Бесплатно</a>
           </div>
@@ -135,8 +148,17 @@
             </div>
 
             <div class="promo-slider-nav">
-              <button type="button" class="slider-button-prev"><span class="visually-hidden">Назад</span></button>
-              <button type="button" class="slider-button-next"><span class="visually-hidden">Вперед</span></button>
+              <button type="button" class="slider-button-prev">
+                <svg width="23" height="41" viewBox="0 0 23 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.8,1l2.1,2.1L5.1,20.9L23,38.9L20.9,41L1,20.9L20.8,1z"/>
+                </svg>
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button type="button" class="slider-button-next">
+                <svg width="23" height="41" viewBox="0 0 23 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22,20.9L2.1,41L0,38.9l17.8-17.9L0.1,3.1L2.1,1L22,20.9z"/>
+                </svg>
+                <span class="visually-hidden">Вперед</span></button>
             </div>
 
             <div class="promo-slider-pagination">
@@ -172,7 +194,7 @@
                 </div>
               </div>
             </li>
-            <li class="product-card">
+            <li class="product-card new">
               <div class="product-card-buttons">
                 <a class="card-button buy" href="404.html">Купить</a>
                 <a class="card-button add-favorite" href="404.html">В закладки</a>
@@ -204,7 +226,7 @@
                 </div>
               </div>
             </li>
-            <li class="product-card">
+            <li class="product-card new">
               <div class="product-card-buttons">
                 <a class="card-button buy" href="404.html">Купить</a>
                 <a class="card-button add-favorite" href="404.html">В закладки</a>
@@ -263,18 +285,18 @@
           </ul>
 
           <div class="tabs-content">
-            <div id="Delivery" class="tab-item">
+            <div id="Delivery" class="tab-item delivery">
               <h3 class="tab-item-title">Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо
                 заработаем, <br>поднимая его на ваш этаж!</p>
             </div>
-            <div id="Warranty" class="tab-item" style="display: none;">
+            <div id="Warranty" class="tab-item warranty" style="display: none;">
               <h3 class="tab-item-title">Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
                 возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом
                 уж восстановите как-нибудь сами.</p>
             </div>
-            <div id="Сredit" class="tab-item" style="display: none;">
+            <div id="Сredit" class="tab-item credit" style="display: none;">
               <h3 class="tab-item-title">Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             </div>
