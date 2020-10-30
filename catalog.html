@@ -17,13 +17,14 @@
       <div class="wrapper">
         <div class="topbar-grid-container">
 
-          <a class="site-logo" href="index.html"><img src="img/logo/site-logo.svg" alt="Логотип Техномарт" width="108" height="18"></a>
+          <a class="site-logo" href="index.html"><img src="img/logo/site-logo.svg" alt="Логотип Техномарт — переход на главную" width="108" height="18"></a>
 
           <form class="header-search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <input class="header-search-field" type="search" placeholder="Поиск:">
+            <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+            <input class="header-search-field" id="header-search" type="search" placeholder="Поиск:">
             <button class="search-form-button" type="submit">
               <span class="visually-hidden">Найти</span>
-              <svg class="search-form-icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <svg class="search-form-icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
               </svg>
             </button>
@@ -54,14 +55,15 @@
 
           <div class="user-logged-wrap">
             <div class="user-logged-block">              
-              <a class="user-profile-link" href="404.html">
-                <svg class="user-icon" width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a class="user-profile-link" href="404.html" aria-label="Открыть профайл">
+                <svg class="user-icon" width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                   <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"/>
                 </svg>
                 <span class="user-logged-name">Равшан Джамшутович</span>
               </a> 
-              <a href="404.html">
-                <svg class="user-logout-icon" width="20" height="17" viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg" fill="currentColor">          
+              <a class="exit-link" href="404.html">
+                <span class="visually-hidden">Выйти из аккаунта</span>
+                <svg class="user-logout-icon" width="20" height="17" viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false">          
                   <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z"/>          
                   <path d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"/>
                 </svg>
@@ -98,7 +100,7 @@
       <div class="wrapper">
 
       <ul class="breadcrumbs">
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html"><img src="img/icons/icon-home.svg" alt="Главная" width="14" height="12"></a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link homepage" href="index.html"><span class="visually-hidden">Главная</span></a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="404.html">Инструмент</a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link current-item">Перфораторы</a></li>
@@ -119,14 +121,16 @@
                 <div class="range-controls">
                   <div class="range-scale">
                     <div class="range-progress" style="width: 87%;"></div>
-                    <div class="range-toggle range-toggle-min" tabindex="0"></div>
-                    <div class="range-toggle range-toggle-max" tabindex="0" style="left: 87%"></div>
+                    <button class="range-toggle range-toggle-min" type="button"><span class="visually-hidden">Регулятор минимальной цены</span></button>
+                    <button class="range-toggle range-toggle-max" type="button" style="left: 87%"><span class="visually-hidden">Регулятор максимальной цены</span></button>
                   </div>                  
                 </div>
                 <div class="price-controls">
-                  <input class="price-value" type="number" name="min-price" max="30000" step="500" value="0">
+                  <label class="visually-hidden" for="min-price-value">Значение минимальной цены</label>
+                  <input class="price-value" id="min-price-value" type="number" name="min-price" min="0" max="30000" step="500" value="0">
                   <span>—</span>
-                  <input class="price-value" type="number" name="max-price" max="30000" step="500" value="30000">
+                  <label class="visually-hidden" for="max-price-value">Значение максимальной цены</label>
+                  <input class="price-value" id="max-price-value" type="number" name="max-price" min="0" max="30000" step="500" value="30000">
                 </div>
               </div>
             </fieldset>
@@ -186,13 +190,13 @@
           </div>
           <div class="catalog-order-nav">
             <a class="catalog-order-nav-item" href="catalog?order=ASC">
-              <svg class="order-nav-icon" width="12" height="10" viewBox="0 0 12 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <svg class="order-nav-icon" width="12" height="10" viewBox="0 0 12 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path d="M5.66241 0L11.1624 10L0.162415 10"/>
               </svg>
               <span class="visually-hidden">По возрастанию</span>
             </a>
             <a class="catalog-order-nav-item desc" href="catalog?order=DESC">
-              <svg class="order-nav-icon" width="12" height="10" viewBox="0 0 12 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <svg class="order-nav-icon" width="12" height="10" viewBox="0 0 12 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path d="M5.66241 10L0.162415 0H11.1624"/>
               </svg>              
               <span class="visually-hidden">По убыванию</span>
@@ -203,30 +207,23 @@
         <section class="catalog-wrap">
 
           <article class="product-card">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3></a>
               <div class="product-card-price">
                 <span class="price-last">30500 Р.</span>
                 <span class="price-now">25500 Р.</span>
               </div>
+            </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Небольшой аккумуляторный перфоратор" width="144" height="128"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
             </div>
           </article>
 
           <article class="product-card">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3></a>
               <div class="product-card-price">
@@ -234,16 +231,16 @@
                 <span class="price-now">25500 Р.</span>
               </div>
             </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Небольшой аккумуляторный перфоратор" width="144" height="128"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
+            </div>
           </article>
 
           <article class="product-card new">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3></a>
               <div class="product-card-price">
@@ -251,16 +248,16 @@
                 <span class="price-now">25500 Р.</span>
               </div>
             </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Небольшой аккумуляторный перфоратор" width="144" height="128"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
+            </div>
           </article>
 
           <article class="product-card new">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 3000</h3></a>
               <div class="product-card-price">
@@ -268,16 +265,16 @@
                 <span class="price-now">15500 Р.</span>
               </div>
             </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-3000.jpg" alt="Небольшой аккумуляторный перфоратор" width="127" height="112"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
+            </div>
           </article>
 
           <article class="product-card">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3></a>
               <div class="product-card-price">
@@ -285,32 +282,32 @@
                 <span class="price-now">25500 Р.</span>
               </div>
             </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Небольшой аккумуляторный перфоратор" width="144" height="128"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
+            </div>
           </article>
 
           <article class="product-card new">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 2000</h3></a>
               <div class="product-card-price">
                 <span class="price-now">12500 Р.</span>
               </div>
             </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-2000.jpg" alt="Небольшой аккумуляторный перфоратор" width="127" height="112"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
+            </div>
           </article>
 
           <article class="product-card new">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 3000</h3></a>
               <div class="product-card-price">
@@ -318,16 +315,16 @@
                 <span class="price-now">15500 Р.</span>
               </div>
             </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-3000.jpg" alt="Небольшой аккумуляторный перфоратор" width="127" height="112"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
+            </div>
           </article>
 
           <article class="product-card">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3></a>
               <div class="product-card-price">
@@ -335,31 +332,38 @@
                 <span class="price-now">25500 Р.</span>
               </div>
             </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Небольшой аккумуляторный перфоратор" width="144" height="128"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
+            </div>
           </article>
 
           <article class="product-card new">
-            <div class="product-card-buttons">
-              <a class="card-button buy" href="404.html">Купить</a>
-              <a class="card-button add-favorite" href="404.html">В закладки</a>
-            </div>
-            <div class="product-card-previews"> 
-                <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112"></a>
-            </div>
             <div class="product-card-info">
               <a href="404.html"><h3 class="product-card-title">Перфоратор BOSCH BFG 2000</h3></a>
               <div class="product-card-price">
                 <span class="price-now">12500 Р.</span>
               </div>
+            </div>
+            <div class="product-card-previews"> 
+              <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-2000.jpg" alt="Небольшой аккумуляторный перфоратор" width="127" height="112"></a>
+            </div>
+            <div class="product-card-buttons">
+              <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+              <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
             </div>
           </article>
 
         </section>
 
         <div class="pagination">
-          <a class="pagination-item current-item" href="catalog?page=1">1</a>
-          <a class="pagination-item" href="catalog?page=2">2</a>
-          <a class="pagination-item" href="catalog?page=3">3</a>
-          <a class="pagination-item next" href="catalog?page=2">Следующая</a>
+          <a class="pagination-item current-item" href="catalog?page=1" aria-label="Страница 1 пагинации">1</a>
+          <a class="pagination-item" href="catalog?page=2" aria-label="Страница 2 пагинации">2</a>
+          <a class="pagination-item" href="catalog?page=3" aria-label="Страница 3 пагинации">3</a>
+          <a class="pagination-item next" href="catalog?page=2" aria-label="Следующая страница пагинации">Следующая</a>
         </div>
 
       </div>
@@ -390,7 +394,7 @@
         <div class="footer-upper-grid-container">
 
           <div class="footer-contact-wrap">
-            <a class="footer-logo" href="index.html"><img src="img/logo/site-logo.svg" alt="Логотип «Техномарт» красный" width="138" height="23"></a>
+            <a class="footer-logo" href="index.html"><img src="img/logo/site-logo.svg" alt="Логотип «Техномарт» — переход на главную страницу" width="138" height="23"></a>
             <address>
               <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br><a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
             </address>
@@ -424,9 +428,33 @@
           <p class="copyright">© 2010–2019 Компания «Техномарт» <br>Все права защищены</p>
 
           <ul class="footer-socials">
-            <li class="footer-socials-item"><a href="https://vk.com/denistugov" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z" fill="#fff"/></svg><span class="visually-hidden">Вконтакте</span></a></li>
-            <li class="footer-socials-item"><a href="https://www.facebook.com/denis.tugov" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4z" fill="#fff"/></svg><span class="visually-hidden">Фейсбук</span></a></li>
-            <li class="footer-socials-item"><a href="https://www.instagram.com/den0015" target="_blank"><svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle class="social-button-bg" cx="22" cy="22" r="20.33"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15a3 3 0 013 3v15a3 3 0 01-3 3H14a3 3 0 01-3-3V14a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM14 29v-9h1.18a6.5 6.5 0 1012.64 0H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"/></svg><span class="visually-hidden">Инстаграм</span></a></li>
+            <li class="footer-socials-item">
+              <a href="https://vk.com/denistugov" target="_blank">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false">
+                  <circle class="social-button-bg" cx="22" cy="22" r="20.33"/>
+                  <path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z" fill="#fff"/>
+                </svg>
+               </a>
+            </li>
+            <li class="footer-socials-item">
+              <a href="https://www.facebook.com/denis.tugov" target="_blank">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false">
+                  <circle class="social-button-bg" cx="22" cy="22" r="20.33"/>
+                  <path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4z" fill="#fff"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a href="https://www.instagram.com/den0015" target="_blank">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false">
+                  <circle class="social-button-bg" cx="22" cy="22" r="20.33"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15a3 3 0 013 3v15a3 3 0 01-3 3H14a3 3 0 01-3-3V14a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM14 29v-9h1.18a6.5 6.5 0 1012.64 0H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"/>
+                </svg>
+              </a>
+            </li>
           </ul>
 
           <div class="footer-signature">
@@ -439,6 +467,18 @@
     </div>
 
   </footer>
+
+  <section class="modal modal-cart-notice">
+    <h2 class="visually-hidden">Уведомление о добавлении в корзину</h2>
+    <div class="cart-notice-message-wrap">
+      <p class="cart-notice-message notice-succes">Товар добавлен в корзину!</p>
+    </div>
+    <div class="cart-notice-buttons-wrap">
+      <a class="button cart-notice-button" href="404.html">Оформить заказ</a>
+      <a class="button cart-notice-button white-button" href="catalog.html">Продолжить покупки</a>
+    </div>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 
 </body>
 </html>
