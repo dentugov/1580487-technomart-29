@@ -951,6 +951,10 @@ img {
   justify-self: center;
 }
 
+.social-button-icon {
+  display: block;
+}
+
 .social-button-bg {
   color: var(--social-button-bg);
 }
