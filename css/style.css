@@ -202,6 +202,7 @@ img {
 /* Modals */
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -213,6 +214,11 @@ img {
   background-color: var(--basic-white);
   box-shadow: 0 4px 20px var(--modal-shadow);
   z-index: 10;
+}
+
+.modal-show {
+  display: block;
+  animation: emergence .35s;
 }
 
 /* Modal Close */
@@ -250,7 +256,6 @@ img {
 /* Modal Write Us */
 
 .modal-write-us {
-  display: none;
   width: 620px;
   top: 125px;
   bottom: auto;
@@ -280,11 +285,21 @@ img {
 }
 
 .write-us-form-field {
-    display: block;
+  display: block;
   width: 100%;
   border: 2px solid var(--basic-greylight);
   border-radius: 2px;
   padding: 10px 10px;
+}
+
+.valid-error {
+  border: 2px solid var(--basic-red);
+  outline-color: var(--basic-red);
+  box-shadow: 0 0 8px 0 var(--basic-red);
+}
+
+.valid-error::before {
+  content: 'Заполните поле';
 }
 
 .write-us-form-field::placeholder {
@@ -304,7 +319,6 @@ img {
 /* Modal Map */
 
 .modal-map {
-  display: none;   
   width: 940px;
   top: 125px;
   bottom: auto;
@@ -318,7 +332,6 @@ img {
 /* Modal Cart Notice */
 
 .modal-cart-notice {
-  display: none;
   width: 620px;
   top: 10vw;
   bottom: auto;
@@ -2049,4 +2062,18 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-red);
   border: 1px solid var(--basic-red);
+}
+
+/* Animations */
+
+@keyframes emergence {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
