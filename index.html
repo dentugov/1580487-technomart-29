@@ -6,7 +6,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="site-body">
@@ -134,7 +134,7 @@
                 </div>
               </div>
 
-              <div class="promo-slider-item" style="display: none;">
+              <div class="promo-slider-item">
                 <img src="img/content/slide-drill.jpg" alt="Слайд 2 — Сверлим кирпичную стену обычной дрелью" width="620" height="266">
 
                 <div class="promo-slider-content-container">
@@ -190,7 +190,7 @@
                 <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-9000.jpg" alt="Перфоратор с вертикальным расположением двигателя работающий от сети" width="218" height="174"></a>
               </div>
               <div class="product-card-buttons">
-                <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+                <a class="card-button buy" href="404.html" aria-label="Добавить товар в корзину"><span class="card-button-buy-label">Купить</span></a>
                 <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
               </div>
             </li>
@@ -206,7 +206,7 @@
                 <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-3000.jpg" alt="Небольшой аккумуляторный перфоратор" width="218" height="174"></a>
               </div>
               <div class="product-card-buttons">
-                <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+                <a class="card-button buy" href="404.html" aria-label="Добавить товар в корзину"><span class="card-button-buy-label">Купить</span></a>
                 <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
               </div>
             </li>
@@ -222,7 +222,7 @@
                 <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-6000.jpg" alt="Небольшой аккумуляторный перфоратор" width="218" height="174"></a>
               </div>
               <div class="product-card-buttons">
-                <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+                <a class="card-button buy" href="404.html" aria-label="Добавить товар в корзину"><span class="card-button-buy-label">Купить</span></a>
                 <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
               </div>
             </li>
@@ -237,7 +237,7 @@
                 <a class="product-card-preview-link" href="404.html"><img class="product-card-thumb" src="img/catalog/products/bosch-bfg-2000.jpg" alt="Небольшой аккумуляторный перфоратор" width="218" height="174"></a>
               </div>
               <div class="product-card-buttons">
-                <a class="card-button buy" href="404.html"><span class="card-button-buy-label" aria-label="Добавить товар в корзину">Купить</span></a>
+                <a class="card-button buy" href="404.html" aria-label="Добавить товар в корзину"><span class="card-button-buy-label">Купить</span></a>
                 <a class="card-button add-favorite" href="404.html" aria-label="Добавить товар в закладки">В закладки</a>
               </div>
             </li>
@@ -285,16 +285,16 @@
           </ul>
 
           <div class="tabs-content">
-            <div id="Delivery" class="tab-item delivery">
+            <div id="Delivery" class="tab-item delivery current-item">
               <h3 class="tab-item-title">Доставка</h3>
               <p class="tab-item-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
             </div>
-            <div id="Warranty" class="tab-item warranty" style="display: none;">
+            <div id="Warranty" class="tab-item warranty">
               <h3 class="tab-item-title">Гарантия</h3>
               <!-- В данном месте считаю нецелесообразным подгонять тестовый блок под PixelPerfect, т.к. это явная "недосмотренность дизайнера" — блок просто немного съехал с общей сетки. Тоже самое касается фоновых картинок на двух последних слайдах: на макете они выходят за пределы блока и всего контейнера сайта, а в верстке упираются в край. -->
               <p class="tab-item-text">Если купленный у нас товар поломается или заискрит, а&nbsp;также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </div>
-            <div id="Сredit" class="tab-item credit" style="display: none;">
+            <div id="Сredit" class="tab-item credit">
               <h3 class="tab-item-title">Кредит</h3>
               <p class="tab-item-text">Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.</p>
               <a class="button button-credit-request" href="404.html">Отправить заявку</a>
@@ -432,7 +432,7 @@
         </p>
         <p class="write-us-form-field-item">
           <label class="write-us-form-label" for="your-email">Ваш e-mail:</label>
-          <input class="write-us-form-field" id="your-email" type="email" name="email" placeholder="email@example.com">        
+          <input class="write-us-form-field" id="your-email" type="email" name="email" placeholder="email@example.com">  
         </p>
         <p class="write-us-form-field-item textarea">
           <label class="write-us-form-label" for="message-text">Текст письма:</label>
@@ -452,7 +452,7 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script type="text/javascript" src="js/scripts.js"></script>
+  <script src="js/scripts.min.js"></script>
 
 </body>
 </html>
