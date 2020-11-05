@@ -81,10 +81,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -111,6 +107,7 @@ img {
   clip: rect(0,0,0,0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
+  overflow: hidden;
 }
 
 .wrapper {
@@ -526,7 +523,7 @@ img {
 /* Shop Navigation */
 
 .shop-navigation-wrap {
-  display: flex; /* допилю в следующем задании */
+  display: flex;
 }
 
 .shop-menu-list {
@@ -552,6 +549,10 @@ img {
 
 .shop-menu-link:active {
   background-color: var(--extradark-greyblue);
+}
+
+.shop-menu-link.cart {
+  box-shadow: inset 15px 0 0 0 var(--dark-greyblue);
 }
 
 .shop-menu-link.full {
@@ -682,6 +683,7 @@ img {
 
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   font-size: 21px;
@@ -697,13 +699,14 @@ img {
   flex-grow: 1;
 }
 
+
 .user-menu-item.login {
   margin-right: 10px;
 }
 
 .user-menu-link {
   display: block;
-  padding: 13px 0 11px;
+  padding: 13px 10px 11px;
   text-align: center;
   color: var(--basic-black);
 }
@@ -758,6 +761,7 @@ img {
 }
 
 .user-icon {
+  flex-shrink: 0;
   color: var(--basic-greylight);
 }
 
@@ -842,13 +846,14 @@ img {
   width: 100%;
   font-size: 18px;
   line-height: 24px;
+  padding: 0 26px;
   background-color: var(--basic-greyblue);
   border-bottom: 5px solid var(--dark-greyblue);
 }
 
 .main-menu { 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -920,14 +925,15 @@ img {
 
 .footer-site-nav { 
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
   padding: 17px 0;
   margin: 0;
 }
 
-.footer-site-nav-item:not(:last-child) {
-  padding-right: 59px;
+.footer-site-nav-item:not(:first-child) {
+  padding-left: 59px;
 }
 
 .footer-site-nav-link {
@@ -945,14 +951,15 @@ img {
 
 .footer-product-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
   padding: 17px 0;
   margin: 0;
 }
 
-.footer-product-nav-item:not(:last-child) {
-  padding-right: 59px;
+.footer-product-nav-item:not(:first-child) {
+  padding-left: 59px;
 }
 
 .footer-product-nav-link {
@@ -1145,6 +1152,7 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 21px 23px;
+  padding-right: 120px;
   max-width: 300px;
   background-repeat: no-repeat;
 }
@@ -1337,6 +1345,10 @@ img {
   padding: 25px 14px 26px 28px;
   margin-bottom: 20px;
   background-color: var(--bg-greywarm);
+}
+
+.popular-brands {
+  padding-right: 19px;
 }
 
 .catalog-section-header h2 {
@@ -1815,6 +1827,7 @@ img {
   background-color: var(--range-grey);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--range-shadow);
+  cursor: pointer;
   overflow: hidden;
 }
 
@@ -1837,8 +1850,8 @@ img {
   line-height: 18px;
   text-align: center;
   width: 95px;
-  padding: 10px;
-  padding-left: 25px;
+  padding: 9px 10px 11px;
+  padding-left: 23px;
   border: none;
   border-radius: 5px;
   background-color: var(--bg-greywarm);
@@ -2029,14 +2042,14 @@ img {
   border-bottom: 1px dotted var(--basic-red);
 }
 
-.catalog-sort-link-item:hover {
-  color: var(--basic-black);
-  border-bottom: 1px solid var(--basic-red);
-}
-
 .catalog-sort-link-item.current-item {
   color: var(--basic-red);
   border: none;
+}
+
+.catalog-sort-link-item:hover {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
 }
 
 .catalog-order-nav {
@@ -2057,11 +2070,11 @@ img {
   color: var(--basic-greylight);
 }
 
-.catalog-order-nav-item:hover .order-nav-icon {
+.catalog-order-nav-item.current-item .order-nav-icon {
   color: var(--basic-red);
 }
 
-.catalog-order-nav-item:active .order-nav-icon {
+.catalog-order-nav-item:hover .order-nav-icon {
   color: var(--basic-black);
 }
 
@@ -2088,12 +2101,14 @@ img {
 .pagination-item {
   font-size: 13px;
   line-height: 18px;
+  min-width: 38px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--basic-black);
   border: 1px solid var(--border-button);
   border-radius: 2px;
-  padding: 9px 14px;
-  margin-right: 11px;
+  padding: 9px;
+  margin-right: 10px;
 }
 
 .pagination-item:last-child {
